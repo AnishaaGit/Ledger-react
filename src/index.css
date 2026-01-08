@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Global app theme */
+@layer base {
+  :root {
+    --bg: theme(colors.zinc.100);
+    --text: theme(colors.zinc.900);
+  }
+
+  .dark {
+    --bg: theme(colors.black);
+    --text: theme(colors.zinc.100);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100;
+  }
+
+  label {
+    @apply text-zinc-700 dark:text-zinc-300;
+  }
+}
