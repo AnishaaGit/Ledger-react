@@ -18,7 +18,7 @@ const TransactionList = () => {
         p-6 border border-zinc-800
         shadow-[0_0_30px_rgba(197,55,232,0.18)]"
       >
-        <p className="text-center text-zinc-400">
+        <p className="text-md text-center text-zinc-400">
           No transactions yet
         </p>
       </div>
@@ -33,9 +33,10 @@ const TransactionList = () => {
       shadow-[0_0_40px_rgba(197,55,232,0.18)]"
     >
       {/* Heading */}
-      <h2 className="mb-5 text-lg font-semibold tracking-wide
-        bg-linear-to-r from-zinc-200 to-zinc-400
-        bg-clip-text text-transparent">
+      <h2 className="mb-5 text-xl font-semibold text-center 
+        bg-linear-to-r from-purple-400 to-purple-600 
+        bg-clip-text text-transparent 
+        drop-shadow-[0_0_12px_rgba(197,55,232,0.3)] tracking-wide">
         Transaction History
       </h2>
 
